@@ -10,9 +10,9 @@ import SwiftUI
 struct ContentView: View {
     
     @Bindable var integrator = MonteCarloIntegrator()
-    @State private var upperX = ""
-    @State private var lowerX = ""
-    @State private var guesses = ""
+    @State private var upperX = "1"
+    @State private var lowerX = "0"
+    @State private var guesses = "1"
         
     var body: some View {
         VStack {
@@ -29,14 +29,15 @@ struct ContentView: View {
                 TextField("Enter guesses", text: $guesses)
             }
             
-            Button("Integrate", action: {Task.init{await self.calculate()}}) {
-                
+            Button("Integrate",action: {Task.init{await self.calculate()}})
+            HStack{
+                Text("Result: ")
+                Text("\(integrator.integrationValue)")
             }
+            
             .padding()
         }
-        .padding()
-        
-        }
+    }
     func calculate() async {
         let _ : Double = await integrator.calculateIntegral(lowerXLimit: Double(lowerX)!, upperXLimit: Double(upperX)!, numGuesses: Int(guesses)!)
     }

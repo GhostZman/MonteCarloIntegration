@@ -18,6 +18,12 @@
 		68FD01432B894F7D0027CDF9 /* MonteCarloIntegrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FD01422B894F7D0027CDF9 /* MonteCarloIntegrator.swift */; };
 		68FD01442B894F7D0027CDF9 /* MonteCarloIntegrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FD01422B894F7D0027CDF9 /* MonteCarloIntegrator.swift */; };
 		68FD01452B894F7D0027CDF9 /* MonteCarloIntegrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FD01422B894F7D0027CDF9 /* MonteCarloIntegrator.swift */; };
+		68FD01462B8961CE0027CDF9 /* BoundingBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FD013E2B894B740027CDF9 /* BoundingBox.swift */; };
+		68FD01472B8961CE0027CDF9 /* BoundingBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FD013E2B894B740027CDF9 /* BoundingBox.swift */; };
+		68FD01482B8961D00027CDF9 /* MonteCarloIntegrationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687B557C2B76FC2600A44040 /* MonteCarloIntegrationApp.swift */; };
+		68FD01492B8961D10027CDF9 /* MonteCarloIntegrationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687B557C2B76FC2600A44040 /* MonteCarloIntegrationApp.swift */; };
+		68FD014A2B8961D40027CDF9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687B557E2B76FC2600A44040 /* ContentView.swift */; };
+		68FD014B2B8961D50027CDF9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687B557E2B76FC2600A44040 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -278,7 +284,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68FD01462B8961CE0027CDF9 /* BoundingBox.swift in Sources */,
+				68FD014A2B8961D40027CDF9 /* ContentView.swift in Sources */,
 				68FD01442B894F7D0027CDF9 /* MonteCarloIntegrator.swift in Sources */,
+				68FD01482B8961D00027CDF9 /* MonteCarloIntegrationApp.swift in Sources */,
 				687B558F2B76FC2700A44040 /* MonteCarloIntegrationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,7 +298,10 @@
 			files = (
 				687B55992B76FC2700A44040 /* MonteCarloIntegrationUITests.swift in Sources */,
 				68FD01452B894F7D0027CDF9 /* MonteCarloIntegrator.swift in Sources */,
+				68FD014B2B8961D50027CDF9 /* ContentView.swift in Sources */,
+				68FD01492B8961D10027CDF9 /* MonteCarloIntegrationApp.swift in Sources */,
 				687B559B2B76FC2700A44040 /* MonteCarloIntegrationUITestsLaunchTests.swift in Sources */,
+				68FD01472B8961CE0027CDF9 /* BoundingBox.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,12 +17,20 @@ final class MonteCarloIntegrationTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func testExample() async throws {
+        let integrator = MonteCarloIntegrator()
+        
+        let lowerX = 0.0
+        let upperX = 1.0
+        
+        let integral = await integrator.calculateIntegral(lowerXLimit: lowerX, upperXLimit: upperX, numGuesses: 100000)
+        
+        let exactValue = 1 - exp(-1.0)
+        
+        print(exactValue)
+        print(integral)
+        
+        XCTAssertEqual(integral, exactValue, accuracy: 1.0E-2, "Was not equal to this resolution.")
     }
 
     func testPerformanceExample() throws {
