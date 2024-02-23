@@ -39,6 +39,12 @@ struct ContentView: View {
         }
     }
     func calculate() async {
+        if upperX < lowerX {
+            upperX = lowerX
+        }
+        if Int(guesses)! < 1 {
+            guesses = "1"
+        }
         let _ : Double = await integrator.calculateIntegral(lowerXLimit: Double(lowerX)!, upperXLimit: Double(upperX)!, numGuesses: Int(guesses)!)
     }
 }
