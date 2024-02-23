@@ -14,6 +14,7 @@
 		687B558F2B76FC2700A44040 /* MonteCarloIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687B558E2B76FC2700A44040 /* MonteCarloIntegrationTests.swift */; };
 		687B55992B76FC2700A44040 /* MonteCarloIntegrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687B55982B76FC2700A44040 /* MonteCarloIntegrationUITests.swift */; };
 		687B559B2B76FC2700A44040 /* MonteCarloIntegrationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687B559A2B76FC2700A44040 /* MonteCarloIntegrationUITestsLaunchTests.swift */; };
+		68FD013F2B894B740027CDF9 /* BoundingBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FD013E2B894B740027CDF9 /* BoundingBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		687B55942B76FC2700A44040 /* MonteCarloIntegrationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonteCarloIntegrationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		687B55982B76FC2700A44040 /* MonteCarloIntegrationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonteCarloIntegrationUITests.swift; sourceTree = "<group>"; };
 		687B559A2B76FC2700A44040 /* MonteCarloIntegrationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonteCarloIntegrationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		68FD013E2B894B740027CDF9 /* BoundingBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoundingBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				687B557C2B76FC2600A44040 /* MonteCarloIntegrationApp.swift */,
+				68FD013E2B894B740027CDF9 /* BoundingBox.swift */,
 				687B557E2B76FC2600A44040 /* ContentView.swift */,
 				687B55802B76FC2700A44040 /* Assets.xcassets */,
 				687B55822B76FC2700A44040 /* MonteCarloIntegration.entitlements */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68FD013F2B894B740027CDF9 /* BoundingBox.swift in Sources */,
 				687B557F2B76FC2600A44040 /* ContentView.swift in Sources */,
 				687B557D2B76FC2600A44040 /* MonteCarloIntegrationApp.swift in Sources */,
 			);
