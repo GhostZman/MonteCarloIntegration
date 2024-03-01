@@ -23,7 +23,7 @@ final class MonteCarloIntegrationTests: XCTestCase {
         let lowerX = 0.0
         let upperX = 1.0
         
-        let integral = await integrator.calculateIntegral(lowerXLimit: lowerX, upperXLimit: upperX, numGuesses: 100000)
+        let integral = await integrator.calculateIntegral(lowerXLimit: lowerX, upperXLimit: upperX, numGuesses: 10000000)
         
         let exactValue = 1 - exp(-1.0)
         
